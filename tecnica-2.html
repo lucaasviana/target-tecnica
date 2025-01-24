@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnica</title>
+</head>
+<body>
+    
+</body>
+<script>
+var input = 4;
+var n1 = 0;
+var n2 = 1;
+var old_n2 = 0
+// 0, 1, 1, 2, 3, 5, 8, 13, 21
+while(input > n1){
+    n2 = n1 + n2;
+    n1 = old_n2;
+    old_n2 = n2;
+    console.log(n2);
+}
+
+if(input === n1) console.log("Pertence a sequência Fibonacci")
+else console.log("NÃO pertence a sequência Fibonacci")
+</script>
+</html>
